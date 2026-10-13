@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.exe binary
+*.dat binary
