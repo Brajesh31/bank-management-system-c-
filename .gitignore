@@ -1,0 +1,8 @@
+accounts.dat
+*.o
+*.obj
+*.out
+*.exe
+build/
+dist/
+.vscode/*.log
