@@ -1,0 +1,21 @@
+sequenceDiagram
+    actor User
+    participant App
+    participant Disk as accounts.dat
+    User->>App: Launch executable
+    App->>Disk: fopen rb
+    alt File opened
+      App->>Disk: fread up to 100 structures
+      App->>Disk: fclose
+    else Open failed
+      App->>App: Continue with empty/current state
+    end
+    User->>App: Select Exit
+    App->>Disk: fopen wb
+    alt Save file opens
+      App->>Disk: fwrite active records
+      App->>Disk: fclose
+      App-->>User: Print save success
+    else Open failed
+      App-->>User: Print save error
+    end
