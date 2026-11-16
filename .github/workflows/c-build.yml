@@ -1,0 +1,30 @@
+name: C build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Compile with ${{ matrix.compiler }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        compiler: [gcc, clang]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile with strict warnings
+        working-directory: bank management system
+        run: |
+          ${{ matrix.compiler }} --version
+          ${{ matrix.compiler }} -std=c11 -Wall -Wextra -Wpedantic -Werror -O2 main.c -o bank-management-system
+      - name: Verify executable
+        working-directory: bank management system
+        run: test -x bank-management-system
