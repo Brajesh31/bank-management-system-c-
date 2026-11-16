@@ -1,0 +1,13 @@
+sequenceDiagram
+    actor User
+    participant Main
+    participant Create as createAccount
+    participant State as accounts array
+    User->>Main: Select option 1
+    Main->>Create: Call function
+    Create->>Create: Check count below 100
+    Create->>User: Prompt number, name, balance
+    User-->>Create: Enter values
+    Create->>State: Store structure at next index
+    Create->>Create: Increment accountCount
+    Create-->>Main: Return to menu
