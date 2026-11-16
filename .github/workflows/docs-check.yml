@@ -1,0 +1,26 @@
+name: Documentation checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required guides
+        run: |
+          test -s README.md
+          test -s docs/README.md
+          test -s docs/architecture.md
+          test -s docs/security.md
+          test -s docs/testing.md
+          test -s docs/diagrams/README.md
+      - name: Verify Mermaid source count
+        run: test "$(find docs/diagrams -maxdepth 1 -name '*.mmd' | wc -l)" -ge 8
