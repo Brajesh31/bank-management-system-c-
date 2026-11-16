@@ -1,12 +1,8 @@
 cff-version: 1.2.0
+message: "If you use this educational C project, cite the repository."
 title: "Bank Management System in C"
-message: "If you use this project, please cite this repository."
 type: software
 authors:
   - family-names: Kumar
     given-names: Brajesh
-    website: https://github.com/brajesh31
-repository-code: https://github.com/Brajesh31/bank-management-system-c-
-license: MIT
-version: 0.1.0
-date-released: 2025-01-01
+repository-code: "https://github.com/Brajesh31/bank-management-system-c-"
