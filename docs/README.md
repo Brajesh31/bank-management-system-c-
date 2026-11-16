@@ -1,6 +1,6 @@
 # 📚 Documentation hub
 
-This folder documents the existing C console program and a carefully labelled set of proposed improvements. The source of truth for current behaviour is [`bank management system/main.c`](../bank%20management%20system/main.c). Documentation must not turn planned capabilities into claims about the current application.
+This folder documents the existing C console program and a clearly labelled set of proposed improvements. The source of truth for current behaviour is [`bank management system/main.c`](../bank%20management%20system/main.c). Documentation must not turn planned capabilities into claims about the current application.
 
 > **Safety boundary:** this repository is an educational prototype. It must not be used with real account-holder identities, account numbers, or balances.
 
