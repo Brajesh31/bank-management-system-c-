@@ -1,0 +1,36 @@
+name: "💡 Feature request"
+description: Suggest a focused improvement to this educational C program.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the learner or user need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [Input safety, Persistence, Testing, Documentation, Learning feature, Other]
+    validations:
+      required: true
+  - type: checkboxes
+    id: synthetic
+    attributes:
+      label: Data safety
+      options:
+        - label: I will use synthetic data only.
+          required: true
