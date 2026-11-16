@@ -1,0 +1,9 @@
+flowchart LR
+    Input[Terminal input] --> Scan[scanf calls]
+    Scan --> Operation[Selected operation]
+    Operation <--> Memory[(Global accounts array)]
+    Memory --> Output[Printed account list]
+    Memory --> Write[fwrite]
+    Write --> File[(accounts.dat)]
+    File --> Read[fread]
+    Read --> Memory
