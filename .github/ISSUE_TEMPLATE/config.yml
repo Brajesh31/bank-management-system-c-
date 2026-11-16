@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔐 Private security report
+    url: https://github.com/Brajesh31/bank-management-system-c-/security
+    about: Do not publish sensitive data or exploitable security details in a public issue.
