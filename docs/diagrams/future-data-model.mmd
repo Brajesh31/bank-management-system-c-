@@ -1,0 +1,15 @@
+erDiagram
+    ACCOUNT ||--o{ TRANSACTION : has
+    ACCOUNT {
+      int account_id
+      string holder_name
+      int64 balance_minor_units
+      string status
+    }
+    TRANSACTION {
+      int transaction_id
+      int account_id
+      string transaction_type
+      int64 amount_minor_units
+      datetime created_at
+    }
