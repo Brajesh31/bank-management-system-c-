@@ -1,0 +1,43 @@
+name: "🐛 Bug report"
+description: Report a reproducible program or documentation defect.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic values only. Do not include real names, account numbers, or balances."
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include menu selections and synthetic test input.
+    validations:
+      required: true
+  - type: input
+    id: compiler
+    attributes:
+      label: Compiler and version
+      placeholder: GCC 14 or Clang 19
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and version
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+  - type: textarea
+    id: output
+    attributes:
+      label: Sanitized compiler or runtime output
