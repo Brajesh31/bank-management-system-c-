@@ -1,0 +1,12 @@
+flowchart TD
+    A([Begin]) --> B[Read account number]
+    B --> C{Account found?}
+    C -->|No| D[Print not found]
+    C -->|Yes| E[Read amount]
+    E --> F{Balance >= amount?}
+    F -->|Yes| G[Subtract amount]
+    F -->|No| H[Print insufficient funds]
+    G --> I[Print remaining balance]
+    D --> J([Return])
+    H --> J
+    I --> J
