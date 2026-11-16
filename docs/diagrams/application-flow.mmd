@@ -1,0 +1,19 @@
+flowchart TD
+    A([Start]) --> B[loadAccounts]
+    B --> C[Display menu]
+    C --> D[/Read choice/]
+    D --> E{Switch}
+    E -->|1| F[createAccount]
+    E -->|2| G[viewAccounts]
+    E -->|3| H[depositMoney]
+    E -->|4| I[withdrawMoney]
+    E -->|5| J[deleteAccount]
+    E -->|6| K[saveAccounts]
+    E -->|Other| L[Invalid choice]
+    F --> C
+    G --> C
+    H --> C
+    I --> C
+    J --> C
+    L --> C
+    K --> M([Exit])
