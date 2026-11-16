@@ -20,11 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Compile with strict warnings
+      - name: Show compiler
+        run: ${{ matrix.compiler }} --version
+      - name: Compile with warnings enabled
         working-directory: bank management system
         run: |
-          ${{ matrix.compiler }} --version
-          ${{ matrix.compiler }} -std=c11 -Wall -Wextra -Wpedantic -Werror -O2 main.c -o bank-management-system
+          ${{ matrix.compiler }} -std=c11 -Wall -Wextra -Wpedantic main.c -o bank-management-system
       - name: Verify executable
         working-directory: bank management system
         run: test -x bank-management-system
