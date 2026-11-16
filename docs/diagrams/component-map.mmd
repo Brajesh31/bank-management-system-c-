@@ -1,0 +1,15 @@
+flowchart TB
+    Main[main] --> Create[createAccount]
+    Main --> View[viewAccounts]
+    Main --> Deposit[depositMoney]
+    Main --> Withdraw[withdrawMoney]
+    Main --> Delete[deleteAccount]
+    Main --> Save[saveAccounts]
+    Main --> Load[loadAccounts]
+    Create --> State[(accounts and accountCount)]
+    View --> State
+    Deposit --> State
+    Withdraw --> State
+    Delete --> State
+    Save --> State
+    Load --> State
