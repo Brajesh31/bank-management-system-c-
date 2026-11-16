@@ -55,7 +55,7 @@ The repository contains the C program, its existing Windows executable, project 
 | `CITATION.cff` | Software citation metadata |
 | `CONTRIBUTING.md` | Contribution and verification workflow |
 | `SECURITY.md` | Security scope, known risks, and disclosure |
-| `ROADMAP.md` | Prioritized future work |
+| `ROADMAP.md` | Prioritized future improvements |
 | `SUPPORT.md` | Support channels and boundaries |
 
 ## Application directory
