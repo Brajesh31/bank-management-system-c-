@@ -1,0 +1,6 @@
+flowchart LR
+    User[Local terminal user] -->|Menu input| App[Bank Management System executable]
+    App -->|Printed output| User
+    App -->|Read and write| File[(accounts.dat)]
+    Source[main.c] -->|Compiled into| App
+    Boundary[No network service or database] -.-> App
