@@ -51,4 +51,4 @@ flowchart TD
     T --> P
 ```
 
-The target is a recommendation, not existing application code. A responsible refactor would first add input validation and tests, then separate the domain rules from terminal I/O and storage. Monetary values should use integer minor units, and persistence should validate a defined versioned format.
+The target is a recommendation, not existing application code. A responsible refactor would first add input validation and tests, then separate domain rules from terminal I/O and storage. Monetary values should use integer minor units, and persistence should validate a defined versioned format.
