@@ -1,11 +1,17 @@
-# Security Policy
+# 🔐 Security policy
 
-## Scope and limitations
+## Supported scope
 
-This command-line program is a learning example, not a financial service. It stores account names and balances in an unencrypted binary file, has no authentication or authorization, accepts unchecked numeric input, uses floating-point balances, and does not provide audit or backup controls. The current code can also accept negative values and duplicate account numbers.
+This repository is a small educational C program. It is not designed or approved for real banking use. The current implementation has no authentication or authorization, stores raw account structures without encryption, uses unchecked input, and lacks an audit or recovery strategy.
 
-Do not use real identities, account numbers, or balances. Before any serious use, add robust parsing and validation, fixed-precision monetary representation, authenticated access, encryption, atomic persistence, backups, auditing, and recovery testing.
+## Reporting a vulnerability
 
-## Reporting
+Please report suspected security vulnerabilities privately through the repository owner's GitHub profile: <https://github.com/Brajesh31>. Include a concise description, impact, affected revision, and sanitized reproduction steps. Do not attach real names, account numbers, balances, or data files.
 
-Do not publish sensitive files or exploit details in an issue. Contact Brajesh Kumar privately through <https://github.com/brajesh31> with sanitized reproduction steps and impact.
+## Public issue guidance
+
+Use public issues for ordinary reproducible defects and documentation problems. Avoid posting exploit details that would create risk for other users.
+
+## Safe-use statement
+
+Do not enter real financial information. The security limitations and source-grounded findings are documented in [docs/security.md](docs/security.md).
