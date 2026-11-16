@@ -1,8 +1,25 @@
+# Local runtime records. Do not commit account data.
 accounts.dat
+
+# C compiler outputs
 *.o
 *.obj
 *.out
 *.exe
+*.dll
+*.so
+*.dylib
+*.a
 build/
 dist/
+
+# Editors and OS files
 .vscode/*.log
+.DS_Store
+Thumbs.db
+
+# Coverage output
+coverage/
+*.gcda
+*.gcno
+*.profraw
