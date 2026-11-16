@@ -1,0 +1,10 @@
+flowchart TD
+    A([Delete]) --> B[Read account number]
+    B --> C[Search active array]
+    C --> D{First match?}
+    D -->|No| E[Print not found]
+    D -->|Yes| F[Shift later elements left]
+    F --> G[Decrement accountCount]
+    G --> H[Print success]
+    E --> I([Return])
+    H --> I
