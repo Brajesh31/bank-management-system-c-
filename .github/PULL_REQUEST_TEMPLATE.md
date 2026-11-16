@@ -1,14 +1,34 @@
-## Summary
+## 📝 Summary
 
-Describe the C behavior, persistence, or documentation change.
+Describe the problem and the change made.
 
-## Verification
+## 🔍 Change type
+- [ ] Bug fix
+- [ ] Feature
+- [ ] Documentation
+- [ ] Refactoring
+- [ ] Build or CI
 
-- [ ] Built with `-std=c11 -Wall -Wextra -pedantic`
-- [ ] Tested create, list, deposit, withdrawal, delete, and restart/load flows
-- [ ] Tested invalid input and file-error behavior where relevant
-- [ ] Did not include `accounts.dat`, private data, or generated binaries
+## 🧪 Verification
+- [ ] Compiled using C11 and warnings enabled
+- [ ] Ran relevant manual or automated tests with synthetic data
+- [ ] Reviewed input bounds and error paths
+- [ ] Updated affected documentation and Mermaid diagrams
+- [ ] Confirmed no runtime data, secrets, or unintended binaries were added
 
-## Compatibility
+**Exact build command:**
+```bash
+# Add command actually used
+```
 
-Describe any change to the menu, `Account` layout, or `accounts.dat` format.
+**Observed test results:**
+
+Describe evidence. Do not claim tests that were not run.
+
+## 🔐 Security and data impact
+
+Describe changes affecting input, account values, or file persistence.
+
+## 📚 Documentation
+
+List relevant docs and diagram updates.
