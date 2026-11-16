@@ -1,0 +1,14 @@
+sequenceDiagram
+    actor User
+    participant Deposit as depositMoney
+    participant State as accounts array
+    User->>Deposit: Enter account number
+    Deposit->>State: Scan active records
+    alt Matching record
+      Deposit->>User: Prompt deposit amount
+      User-->>Deposit: Enter amount
+      Deposit->>State: Add amount to balance
+      Deposit-->>User: Print updated balance
+    else No matching record
+      Deposit-->>User: Print not found
+    end
