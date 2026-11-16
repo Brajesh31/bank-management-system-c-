@@ -1,12 +1,59 @@
-# Installation
+# 🧰 Installation and build
 
-Install a C compiler such as GCC or Clang. On Windows, use MinGW-w64, LLVM, or a compatible development environment.
+## Requirements
 
-From `bank management system`, compile:
+- GCC or Clang with C11 support.
+- A terminal or command prompt.
+- Git for cloning the repository.
+- Permission to write to the runtime working directory.
+
+No third-party libraries or package installation are required.
+
+## Clone the repository
+
+```bash
+git clone https://github.com/Brajesh31/bank-management-system-c-.git
+cd bank-management-system-c-
+```
+
+## Enter the source directory
+
+```bash
+cd "bank management system"
+```
+
+## Compile with GCC
+
+```bash
+gcc -std=c11 -Wall -Wextra -Wpedantic -O2 main.c -o bank-management-system
+```
+
+## Compile with Clang
+
+```bash
+clang -std=c11 -Wall -Wextra -Wpedantic -O2 main.c -o bank-management-system
+```
+
+## Run the executable
+
+Linux/macOS:
+
+```bash
+./bank-management-system
+```
+
+Windows PowerShell:
 
 ```powershell
-gcc -std=c11 -Wall -Wextra -pedantic main.c -o bank-management-system.exe
 .\bank-management-system.exe
 ```
 
-The executable creates `accounts.dat` only after choosing Exit. Keep that file private and back it up only when it contains synthetic data.
+## Optional debug build
+
+```bash
+gcc -std=c11 -Wall -Wextra -Wpedantic -g -O0 main.c -o bank-management-system-debug
+```
+
+## Runtime file location
+
+The program opens `accounts.dat` as a relative path. The file is created in the process working directory, which may differ from the executable's directory. Choose a dedicated temporary directory for demonstrations and use fictional data only.
