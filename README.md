@@ -171,4 +171,4 @@ MIT. See [LICENSE](LICENSE).
 
 <div align="center">Built as a C programming project by Brajesh Kumar. ⭐ If it helped you learn C structures, arrays, functions, or file I/O, consider starring the repository.</div>
 
-Last updated: 2026-11-21 12:10 UTC
+Last updated: 2026-11-21 19:56 UTC
